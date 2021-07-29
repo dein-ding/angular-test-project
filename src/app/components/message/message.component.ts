@@ -6,13 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
     styleUrls: ['./message.component.css'],
 })
 export class MessageComponent implements OnInit {
-    @Input()
-    type: string;
-    @Input()
-    message: string;
+    @Input() type: string;
+    @Input() message: string;
     title: string;
-
-    constructor() {}
 
     ngOnInit(): void {
         if (this.type == "") this.type = "info";

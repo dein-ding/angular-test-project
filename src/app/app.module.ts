@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ExampleComponent } from './components/example/example.component';
 import { ExamplesComponent } from './components/examples/examples.component';
 import { MessageComponent } from './components/message/message.component';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
     ExamplesComponent,
-    MessageComponent
+    MessageComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

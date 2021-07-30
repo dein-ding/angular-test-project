@@ -1,1 +1,6 @@
 <app-example></app-example>
+<app-list [list]="persons"></app-list>
+
+<input type="text" [(ngModel)]="newFullName" placeholder="full name">
+<input type="number" [(ngModel)]="newAge" placeholder="age">
+<button [disabled]="!newFullName || !newAge" type="submit" (click)="addPerson()">add person</button>

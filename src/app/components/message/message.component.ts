@@ -11,7 +11,8 @@ export class MessageComponent implements OnInit {
     title: string;
 
     ngOnInit(): void {
-        if (this.type == "") this.type = "info";
-        this.title = this.type[0].toUpperCase() + this.type.substring(1)
+        if (!this.type) this.type = "info";
+        if (!this.message) this.message = "default info message";
+        this.title = this.type[0].toUpperCase() + this.type.substring(1);
     }
 }

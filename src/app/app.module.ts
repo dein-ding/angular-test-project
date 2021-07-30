@@ -7,6 +7,7 @@ import { ExampleComponent } from './components/example/example.component';
 import { ExamplesComponent } from './components/examples/examples.component';
 import { MessageComponent } from './components/message/message.component';
 import { ListComponent } from './components/list/list.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListComponent } from './components/list/list.component';
     ExampleComponent,
     ExamplesComponent,
     MessageComponent,
-    ListComponent
+    ListComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
